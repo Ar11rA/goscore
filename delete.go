@@ -1,6 +1,6 @@
 package goscore
 
-// Deletes element at particular index
+// DeleteIndex - Deletes element at particular index
 func (l List) DeleteIndex(i int) List {
 	if i > 0 && i < len(l) {
 		updatedList := append(l[:i], l[i+1:]...)
@@ -9,7 +9,7 @@ func (l List) DeleteIndex(i int) List {
 	return l
 }
 
-// Deletes all elements with the passed value
+// DeleteAllInstances - Deletes all elements with the passed value
 func (l List) DeleteAllInstances(n int) List {
 	var updatedList List
 	for _, val := range l {
@@ -20,7 +20,7 @@ func (l List) DeleteAllInstances(n int) List {
 	return updatedList
 }
 
-// Deletes first instance of element with the passed value
+// DeleteFirstInstance - Deletes first instance of element with the passed value
 func (l List) DeleteFirstInstance(n int) List {
 	indexToDelete := -1
 	for index, val := range l {

@@ -1,6 +1,6 @@
 package goscore
 
-// Finds the passed element and return indices of occurrence and returns true if present
+// Find - Finds the passed element and return indices of occurrence and returns true if present
 func (l List) Find(i interface{}) ([]int, bool) {
 	flag := false
 	var indices []int

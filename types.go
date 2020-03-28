@@ -1,4 +1,4 @@
 package goscore
 
-// Generic List
+// List - Generic List
 type List []interface{}
