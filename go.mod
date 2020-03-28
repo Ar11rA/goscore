@@ -1,4 +1,4 @@
-module goscore
+module github.com/Ar11rA/goscore
 
 go 1.12
 
