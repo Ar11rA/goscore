@@ -11,4 +11,3 @@ func (l List) Find(i interface{}) ([]int, bool) {
 	}
 	return indices, flag
 }
-

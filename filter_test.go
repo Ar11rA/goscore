@@ -6,7 +6,7 @@ import (
 )
 
 func isEven(num interface{}) bool {
-	return num.(int) % 2 == 0
+	return num.(int)%2 == 0
 }
 
 func TestList_Filter(t *testing.T) {

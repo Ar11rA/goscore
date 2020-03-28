@@ -27,7 +27,7 @@ func TestList_Map_WithDouble(t *testing.T) {
 }
 
 func TestList_Map_WithUpperCase(t *testing.T) {
-    l := List{"abc", "def"}
+	l := List{"abc", "def"}
 	mapped := l.Map(upperCase)
 	assert.Equal(t, mapped[0], "ABC")
 	assert.Equal(t, mapped[1], "DEF")

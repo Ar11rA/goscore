@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestList_Find_Sucess(t *testing.T) {
+func TestList_Find_Success(t *testing.T) {
 	l := List{1, 2, 3, 1, 2}
 	indices, isPresent := l.Find(2)
 	assert.Equal(t, isPresent, true)

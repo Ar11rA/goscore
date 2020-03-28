@@ -25,7 +25,7 @@ func TestList_Reduce_WithSum(t *testing.T) {
 }
 
 func TestList_Reduce_WithGroup(t *testing.T) {
-	l := List{1, 2, 1, 1,2}
+	l := List{1, 2, 1, 1, 2}
 	group := l.Reduce(frequency, map[int]int{})
 	assert.Equal(t, group.(map[int]int)[1], 3)
 	assert.Equal(t, group.(map[int]int)[2], 2)
