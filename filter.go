@@ -1,5 +1,6 @@
 package goscore
 
+// Returns a filtered list of elements
 func (l List) Filter(filter func(i interface{}) bool) List {
 	var filteredList List
 	for _, elem := range l {
